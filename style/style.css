@@ -9,7 +9,7 @@
  }
 
 *{ margin: 0%;
-padding:  0%;
+padding:  0% 0% 0%;
 }
 body{ 
     box-sizing: border-box;
@@ -23,7 +23,7 @@ color: Var(--cor-terciaria);
 display: flex;
 justify-content: center;
 text-align: center;
-padding: 1px;
+padding: 0%;
 text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ span{
     color: var(--cor-terciaria);
     border: 1px solid var(--cor-seundaria);
     border-radius: 16%;
-    padding: 3px;
+    padding: 1px;
 }
 span2{
     color: var(--cor-terciaria);
@@ -48,6 +48,7 @@ span2{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 89px;
 }
 .apresentacao2{
     padding: 1% 19%;
@@ -64,6 +65,7 @@ span2{
     font-size: 1.0rem;
 }
 .tamanho_titulo {
+    width: 50%;
     font-size: 2.0rem;
     font-family: 'Mina', sans-serif;
 }
@@ -86,17 +88,17 @@ span2{
     display: flex;
     justify-content: center;
     color: var(--cor-terciaria);
-    width: 140px;
+    width: 56%;
     text-align: center;
-    padding: 9.5px 0 ;
+    padding: 6px 0% ;
     font-family: 'Nunito' sans-serif ;
     font-weight: 600;
     font-size: 1.0rem;
     text-decoration: none;
     border: 2px solid var(--cor-terciaria);
-    width: 200px;
+    
     border-radius: 10%;
-    gap: 10px;
+    gap: 12px;
 }
 .estilo_link:hover{
  background: #272727;
@@ -120,4 +122,8 @@ span2{
     color: var(--cor-seundaria);
 }
 
-  
+@media (max-width: 1200px) {
+    .apresentacao{
+        flex-direction: column;
+    }
+}
