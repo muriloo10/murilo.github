@@ -1,0 +1,123 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Mina&display=swap');
+
+ :root{
+    --cor-primaria: #2e2e2e;
+    --cor-seundaria: #f6f6f6;
+    --cor-terciaria: #efbc98;
+    --fonte-principal:'Nunito', sans-serif;     
+ }
+
+*{ margin: 0%;
+padding:  0%;
+}
+body{ 
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-seundaria);}
+
+.Cabecalho{ 
+font-family: 'Mina', sans-serif;
+font-size: 1.0rem;
+color: Var(--cor-terciaria);
+display: flex;
+justify-content: center;
+text-align: center;
+padding: 1px;
+text-decoration: none;
+}
+
+strong{
+    color:var(--cor-seundaria)
+}
+h1{
+    font-weight: bold;
+}
+span{
+    color: var(--cor-terciaria);
+    border: 1px solid var(--cor-seundaria);
+    border-radius: 16%;
+    padding: 3px;
+}
+span2{
+    color: var(--cor-terciaria);
+
+}
+.apresentacao {
+    padding: 8% 19%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao2{
+    padding: 1% 19%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.distancia_das_letras {
+    width: 4000px
+}
+.about{
+    padding: 1% 10% ;
+    font-family: var(--fonte-principal);
+    font-size: 1.0rem;
+}
+.tamanho_titulo {
+    font-size: 2.0rem;
+    font-family: 'Mina', sans-serif;
+}
+.fonte_texto{
+    width: 100%;
+    font-size: 1.25rem;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+}
+.links{
+    font-family: var(--fonte-principal);
+    font-size: 1.0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between
+}
+.estilo_link{
+    display: flex;
+    justify-content: center;
+    color: var(--cor-terciaria);
+    width: 140px;
+    text-align: center;
+    padding: 9.5px 0 ;
+    font-family: 'Nunito' sans-serif ;
+    font-weight: 600;
+    font-size: 1.0rem;
+    text-decoration: none;
+    border: 2px solid var(--cor-terciaria);
+    width: 200px;
+    border-radius: 10%;
+    gap: 10px;
+}
+.estilo_link:hover{
+ background: #272727;
+ border: 2px solid var(--cor-seundaria)
+
+}
+.imagem {
+ width: 50%
+}
+.rodape{
+    text-align: center;
+    padding: 22px 15px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria) ;
+    font-family: 'Nunito', sans-serif ;
+    font-size: 1.1rem; 
+}
+
+
+.Cabecalho:hover{
+    color: var(--cor-seundaria);
+}
+
+  
