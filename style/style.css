@@ -62,7 +62,7 @@ span2{
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
 }
 .about{
     padding: 1% 10% ;
@@ -111,7 +111,8 @@ span2{
 
 }
 .imagem {
- width: 50%
+ width: 25%;
+ padding: 0% 20% 50% 0%;
 }
 .rodape{
     text-align: center;
@@ -132,12 +133,21 @@ span2{
     .cabecalho{
         padding: 10%;
     }
-    
     .cabecalho_menu{
         justify-content: center;
+        padding: 0% 40% 0%;
+    }
+   .tamanho_titulo{
+        padding: 0% 30% 0%;
+       
+    }
+    .imagem{
+      width: 50%;
+      padding: 0% 0% 0% 0%;
+    
     }
     .apresentacao{
-        flex-direction:column-reverse ;
+        flex-direction: column-reverse ;
     }
     .distancia_das_letras{
       width: 100%;  
