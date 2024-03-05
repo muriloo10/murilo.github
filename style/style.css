@@ -8,28 +8,30 @@
     --fonte-principal:'Nunito', sans-serif;     
  }
 
-*{ margin: 0%;
-padding:  0% 0% 0%;
+*{ margin: 0;
+padding:  0;
 }
 body{ 
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-seundaria);}
 
-.Cabecalho{ 
+.cabecalho{ 
+    padding: 1% 0% 0% 40%;
+}
+.cabecalho_menu{
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+}
+.cabecalho_link{
 font-family: 'Mina', sans-serif;
-font-size: 1.0rem;
-color: Var(--cor-terciaria);
-display: flex;
-justify-content: center;
-text-align: center;
-padding: 0%;
+font-size: 1.25rem;
+color: var(--cor-seundaria);
 text-decoration: none;
 }
 
-strong{
-    color:var(--cor-seundaria)
-}
+
 h1{
     font-weight: bold;
 }
@@ -44,11 +46,11 @@ span2{
 
 }
 .apresentacao {
-    padding: 8% 19%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 89px;
+    
 }
 .apresentacao2{
     padding: 1% 19%;
@@ -57,7 +59,10 @@ span2{
     justify-content: space-between;
 }
 .distancia_das_letras {
-    width: 4000px
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 .about{
     padding: 1% 10% ;
@@ -66,41 +71,41 @@ span2{
 }
 .tamanho_titulo {
     width: 50%;
-    font-size: 2.0rem;
+    font-size: 2.25rem;
     font-family: 'Mina', sans-serif;
 }
 .fonte_texto{
     width: 100%;
-    font-size: 1.25rem;
+    font-size: 2.15rem;
     font-family: var(--fonte-principal);
-    font-weight: 600;
+    font-weight: 500;
 }
 .links{
-    font-family: var(--fonte-principal);
-    font-size: 1.0rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    font-family: var(--fonte-principal);
+    font-size: 1.15rem;
     align-items: center;
     gap: 40px;
-    justify-content: space-between
+
 }
-.estilo_link{
+.estilo_links{
     display: flex;
     justify-content: center;
+    gap: 30px;
     color: var(--cor-terciaria);
-    width: 56%;
+    width: 40%;
     text-align: center;
-    padding: 6px 0% ;
+    padding: 15px 0px;
     font-family: 'Nunito' sans-serif ;
     font-weight: 600;
-    font-size: 1.0rem;
+    font-size: 1.70rem;
     text-decoration: none;
-    border: 2px solid var(--cor-terciaria);
-    
-    border-radius: 10%;
-    gap: 12px;
+    border: 3px solid var(--cor-terciaria);
+    border-radius: 9px;  
 }
-.estilo_link:hover{
+.estilo_links:hover{
  background: #272727;
  border: 2px solid var(--cor-seundaria)
 
@@ -110,20 +115,31 @@ span2{
 }
 .rodape{
     text-align: center;
-    padding: 22px 15px;
+    padding: 24px 15px;
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria) ;
     font-family: 'Nunito', sans-serif ;
-    font-size: 1.1rem; 
+    font-size: 1.20rem; 
 }
 
 
-.Cabecalho:hover{
-    color: var(--cor-seundaria);
+.cabecalho_link:hover{
+    color: #efbc98  ;
 }
+
 
 @media (max-width: 1200px) {
+    .cabecalho{
+        padding: 10%;
+    }
+    
+    .cabecalho_menu{
+        justify-content: center;
+    }
     .apresentacao{
-        flex-direction: column;
+        flex-direction:column-reverse ;
+    }
+    .distancia_das_letras{
+      width: 50%;  
     }
 }
