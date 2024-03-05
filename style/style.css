@@ -140,6 +140,6 @@ span2{
         flex-direction:column-reverse ;
     }
     .distancia_das_letras{
-      width: 50%;  
+      width: 100%;  
     }
 }
